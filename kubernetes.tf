@@ -3,9 +3,12 @@ provider "aws" {
 }
 
 data "terraform_remote_state" "eks" {
-  backend = "local"
+  backend = "remote"
   config = {
-    path = "../learn-terraform-provision-eks-cluster/terraform.tfstate"
+    organization = "GDIT"
+    workspaces = {
+      name = "MLaunch-terraform-provision-eks-cluster"
+    }
   }
 }
 
