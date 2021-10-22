@@ -12,3 +12,12 @@ variable "slack_app_token" {
   description = "Slack App Token"
 }
 
+variable "team" {
+  default     = "cloudgrowth"
+  description = "Cloud Growth Team"
+}
+
+variable "project" {
+  default     = "hmc-helm"
+  description = "Hybrid Multi Cloud"
+}
