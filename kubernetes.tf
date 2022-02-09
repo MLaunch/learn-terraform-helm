@@ -7,7 +7,7 @@ data "terraform_remote_state" "eks" {
   config = {
     organization = "GDIT"
     workspaces = {
-      name = "MLaunch-terraform-provision-eks-cluster"
+      name = var.eks_state_workspace
     }
   }
 }
