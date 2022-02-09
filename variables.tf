@@ -2,6 +2,10 @@ variable "region" {
   default = "us-east-2"
 }
 
+variable "eks_state_workspace" {
+  default = "MLaunch-terraform-provision-eks-cluster"
+}
+
 variable "application_name" {
   type    = string
   default = "terramino"
